@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-container {
+background:white;
+  width: 380px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 50px 100px rgba(0,0,0,0.7);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color:dodgerblue;
+}
+
+/* ===== Floating Label Input ===== */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaaaaa98;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  background: none;
+}
+
+.form-group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: black;
+  font-size: 15px;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: #fff;
+  padding: 0 4px;
+}
+
+/* Label moves up */
+.form-group input:focus + label,
+.form-group input:valid + label {
+  top: -8px;
+  left: 10px;
+  font-size: 13px;
+  color: black;
+}
+
+/* Error message */
+small.error {
+  display: block;
+  margin-top: 5px;
+  color: red;
+  font-size: 13px;
+}
+
+/* Submit Button */
+button {
+  display: block;
+  width: 50%;
+  margin: 2px auto 0;
+  padding: 12px;
+  background: linear-gradient(to left , blue,rgb(15, 15, 24));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+      background: linear-gradient(to right , blue,rgb(15, 15, 24));
+
+}
+
+/* Success message */
+.success-message {
+  text-align: center;
+  color: green;
+  margin-top: 15px;
+  font-weight: bold;
+}

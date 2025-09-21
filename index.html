@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive Form</title>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Registration Form</h1>
+    <form id="regForm" novalidate>
+      <!-- Name -->
+      <div class="form-group">
+        <input type="text" id="name" required>
+        <label for="name">Full Name</label>
+        <small class="error"></small>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <input type="email" id="email" required>
+        <label for="email">Email Address</label>
+        <small class="error"></small>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <input type="text" id="phone" required>
+        <label for="phone">Phone Number</label>
+        <small class="error"></small>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <input type="password" id="password" minlength="6" maxlength="18" required>
+        <label for="password">Password</label>
+        <small class="error"></small>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <input type="password" id="confirm" required>
+        <label for="confirm">Confirm Password</label>
+        <small class="error"></small>
+      </div>
+      
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+      <p id="success" class="success-message"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
